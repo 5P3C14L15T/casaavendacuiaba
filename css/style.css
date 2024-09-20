@@ -7,6 +7,8 @@ body{
     font-family: 'Br Firma';
     font-weight: 300;
     padding-bottom: 120px;
+    padding-bottom: 150px;
+  
 }
 
 header{
@@ -227,9 +229,7 @@ header{
 
 
 /* footer */
-body {
-    padding-bottom: 70px; /* Adiciona um espaço para o rodapé fixo */
-  }
+
   
   .footer-menu {
     position: fixed;
@@ -269,7 +269,7 @@ body {
   }
   
   .search-form.active {
-    bottom: 100px; /* Mostra acima do rodapé */
+    bottom: 50px; /* Mostra acima do rodapé */
   }
 
   .form-check-inline {

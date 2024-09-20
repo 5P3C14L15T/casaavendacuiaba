@@ -884,53 +884,105 @@
       <a href="#" class="search-icon">
         <i class="fas fa-search"></i>
       </a>
-      <a href="#" class="profile-icon">
+      <a href="#" class="profile-icon" >
         <i class="fas fa-user"></i>
       </a>
     </div>
 
+    
+     <!-- Formulário de Pesquisa -->
     <!-- Formulário de Pesquisa -->
 <div id="search-form" class="search-form">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <!-- Campo para Bairro -->
-        <div class="form-group mb-1">
-          <input type="text" class="form-control" placeholder="Bairro" />
+      <!-- Campo para Bairro (Select Dropdown com Busca) -->
+      <div class="col-lg-3 col-md-6 col-12 mb-2">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-text">Bairro</span>
+            <select class="form-control" id="bairro">
+              <option value="" disabled selected>Escolha o Bairro</option>
+              <option value="bairro1">Bairro 1</option>
+              <option value="bairro2">Bairro 2</option>
+              <option value="bairro3">Bairro 3</option>
+              <option value="bairro4">Bairro 4</option>
+              <option value="bairro5">Bairro 5</option>
+              <option value="bairro6">Bairro 6</option>
+              <option value="bairro7">Bairro 7</option>
+              <option value="bairro8">Bairro 8</option>
+              <option value="bairro9">Bairro 9</option>
+              <option value="bairro10">Bairro 10</option>
+            </select>
+          </div>
         </div>
-        
-        <!-- Campo para Valor Mínimo -->
-        <div class="form-group mb-1">
-          <input
-            type="number"
-            class="form-control"
-            placeholder="Valor Mínimo"
-          />
-        </div>
+      </div>
 
-        <!-- Campo para Valor Máximo -->
-        <div class="form-group mb-1">
-          <input
-            type="number"
-            class="form-control"
-            placeholder="Valor Máximo"
-          />
+      <!-- Campo para Valor Mínimo -->
+      <div class="col-lg-3 col-md-6 col-12 mb-2">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-text">Valor Mín R$</span>
+            <input
+              type="number"
+              class="form-control"
+              id="valor-minimo"
+              placeholder="Valor Mínimo"
+              min="100000"
+              step="50000"
+              value="100000"
+            />
+          </div>
         </div>
+      </div>
 
-        <!-- Campo para Quartos -->
-        <div class="form-group mb-1">
-          <input type="number" class="form-control" placeholder="Quartos" />
+      <!-- Campo para Valor Máximo -->
+      <div class="col-lg-3 col-md-6 col-12 mb-2">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-text">Valor Max R$</span>
+            <input
+              type="number"
+              class="form-control"
+              id="valor-maximo"
+              placeholder="Valor Máximo"
+              min="100000"
+              step="50000"
+              value="150000"
+            />
+          </div>
         </div>
+      </div>
 
-        <!-- Botões de Ação -->
-        <div class="d-flex justify-content-between">
-          <button class="btn btn-primary flex-grow-1 me-2">Pesquisar</button>
-          <button class="btn btn-secondary flex-grow-1">Limpar Dados</button>
+      <!-- Campo para Quartos (Select Dropdown) -->
+      <div class="col-lg-3 col-md-6 col-12 mb-2">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-text">Quartos</span>
+            <select class="form-control" id="quartos">
+              <option value="" disabled selected>Quantidade de Quartos</option>
+              <option value="1">1 Quarto</option>
+              <option value="2">2 Quartos</option>
+              <option value="3">3 Quartos</option>
+              <option value="4">4 Quartos</option>
+              <option value="5oumais">5 ou Mais</option>
+            </select>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Botões de Ação -->
+    <div class="row">
+      <div class="col-12 d-flex justify-content-between">
+        <button class="btn btn-primary flex-grow-1 me-1">Pesquisar</button>
+        <button class="btn btn-secondary flex-grow-1">Limpar Dados</button>
       </div>
     </div>
   </div>
 </div>
+
+
+     <!-- Formulário de Pesquisa -->
 
 
     <script
@@ -946,5 +998,7 @@
     ></script>
 
     <script src="js/script.js"></script>
+
+
   </body>
 </html>
