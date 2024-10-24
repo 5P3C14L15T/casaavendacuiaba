@@ -68,6 +68,7 @@ header{
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.8em; /* Ajuste o tamanho do ícone */
+    z-index: 999;
   }
   
   .badge-top-left i {
