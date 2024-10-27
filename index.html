@@ -57,76 +57,84 @@
       <div class="row">
 
         <!-- Card 1 -->
-<div class="col-custom mb-4">
-  <div class="card">
-    <!-- Carousel com Badges -->
-    <div class="card-img position-relative">
-      <!-- Ícone de medalha no canto superior esquerdo -->
-      <span class="badge badge-top-left">
-        <i class="fas fa-crown"></i>
-      </span>
+        <div class="col-custom mb-4">
+          <div class="card">
+            <!-- Carousel com Badges -->
+            <div class="card-img position-relative">
+              <!-- Ícone de medalha no canto superior esquerdo -->
+              <span class="badge badge-top-left">
+                <i class="fas fa-crown"></i>
+              </span>
 
-      <!-- Carousel de Imagens -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/casa.jpeg" class="d-block w-100" alt="Casa 1">
-          </div>
-          <div class="carousel-item">
-            <img src="images/casa.jpeg" class="d-block w-100" alt="Casa 2">
-          </div>
-          <div class="carousel-item">
-            <img src="images/casa.jpeg" class="d-block w-100" alt="Casa 3">
+              <!-- Carousel de Imagens -->
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/casa.jpeg" class="d-block w-100" alt="Casa 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/casa.jpeg" class="d-block w-100" alt="Casa 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/casa.jpeg" class="d-block w-100" alt="Casa 3">
+                  </div>
+                </div>
+                <!-- Botões discretos para navegar -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+
+              <!-- Badge do Bairro no canto superior direito -->
+              <span class="badge badge-top-right">Morada do Ouro</span>
+              <!-- Badge do Valor no canto inferior direito -->
+              <span class="badge badge-bottom-right">R$ 2.500.000</span>
+            </div>
+
+            <!-- Título, Valor e Bairro -->
+            <div class="card-body">
+              <h5 class="card-title">
+                Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+              </h5>
+              <!-- Ícones para detalhes da propriedade -->
+              <div class="property-icons">
+                <i class="fas fa-bed me-2"></i><span>3</span>
+                <i class="fas fa-bath me-2"></i><span>3</span>
+                <i class="fas fa-car me-2"></i><span>3</span>
+                <i class="fas fa-arrows-alt me-2"></i><span>150m²</span>
+              </div>
+              <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+            </div>
+
+
+            <!-- Footer com ícones -->
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              <!-- Ícones com tamanhos iguais -->
+              <div class="d-flex align-items-center">
+                <a href="#" class="like text-danger me-1">
+                  <i class="fas fa-heart"></i>
+                </a>
+                <a href="#" class="zap text-success me-1">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="save text-warning">
+                  <i class="fas fa-bookmark"></i>
+                </a>
+              </div>
+              <!-- Botão estilizado com Bootstrap -->
+              <a href="#" class="ver-mais btn">Ver mais</a>
+            </div>
+
+
           </div>
         </div>
-        <!-- Botões discretos para navegar -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
-      </div>
-
-      <!-- Badge do Bairro no canto superior direito -->
-      <span class="badge badge-top-right">Morada do Ouro</span>
-      <!-- Badge do Valor no canto inferior direito -->
-      <span class="badge badge-bottom-right">R$ 2.500.000</span>
-    </div>
-
-    <!-- Título, Valor e Bairro -->
-    <div class="card-body">
-      <h5 class="card-title">
-        Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
-      </h5>
-      <!-- Ícones para detalhes da propriedade -->
-      <div class="property-icons bg-black">
-        <i class="fas fa-bed"></i><span>3</span>
-        <i class="fas fa-bath"></i><span>3</span>
-        <i class="fas fa-car"></i><span>3</span>
-        <i class="fas fa-arrows-alt"></i><span>150m²</span>
-      </div>
-      <p class="publication-date">Postado em: 15/09/24, 14:30</p>
-    </div>
-
-    <!-- Footer com ícones -->
-    <div class="card-footer">
-      <!-- Ícones com tamanhos iguais -->
-      <div class="d-flex align-items-center">
-        <a href="#" class="zap text-success">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="#" class="save text-warning mx-2">
-          <i class="fas fa-bookmark"></i>
-        </a>
-      </div>
-      <!-- Botão estilizado com Bootstrap -->
-      <a href="#" class="ver-mais btn text-center">Ver mais</a>
-    </div>
-  </div>
-</div>
 
 
 
@@ -894,12 +902,16 @@
       <i class="fas fa-search"></i>
     </a>
     <a href="#" class="profile-icon">
+      <i class="fas fa-heart"></i>
+    </a>
+    <a href="#" class="profile-icon">
       <i class="fas fa-user"></i>
     </a>
   </div>
 
 
   <!-- Formulário de Pesquisa -->
+
   <!-- Formulário de Pesquisa -->
   <div id="search-form" class="search-form">
     <div class="container">
@@ -907,9 +919,9 @@
         <!-- Campo para Bairro (Select Dropdown com Busca) -->
         <div class="col-lg-3 col-md-6 col-12 mb-2">
           <div class="form-group">
-            <div class="input-group">
+            <div class="input-group position-relative">
               <span class="input-group-text">Bairro</span>
-              <select class="form-control" id="bairro">
+              <select class="form-control custom-select-arrow" id="bairro">
                 <option value="" disabled selected>Escolha o Bairro</option>
                 <option value="bairro1">Bairro 1</option>
                 <option value="bairro2">Bairro 2</option>
@@ -930,9 +942,17 @@
         <div class="col-lg-3 col-md-6 col-12 mb-2">
           <div class="form-group">
             <div class="input-group">
+              <!-- Botão Redondo de Decremento para Valor Mínimo -->
+              <button class="btn btn-outline-secondary rounded-circle" type="button" id="decrement-min-btn">-</button>
+
               <span class="input-group-text">Valor Mín R$</span>
+
+              <!-- Campo de Input para o Valor Mínimo -->
               <input type="number" class="form-control" id="valor-minimo" placeholder="Valor Mínimo" min="100000"
-                step="50000" value="100000" />
+                step="10000" value="100000" />
+
+              <!-- Botão Redondo de Incremento para Valor Mínimo -->
+              <button class="btn btn-outline-secondary rounded-circle" type="button" id="increment-min-btn">+</button>
             </div>
           </div>
         </div>
@@ -941,9 +961,17 @@
         <div class="col-lg-3 col-md-6 col-12 mb-2">
           <div class="form-group">
             <div class="input-group">
+              <!-- Botão Redondo de Decremento para Valor Máximo -->
+              <button class="btn btn-outline-secondary rounded-circle" type="button" id="decrement-max-btn">-</button>
+
               <span class="input-group-text">Valor Max R$</span>
+
+              <!-- Campo de Input para o Valor Máximo -->
               <input type="number" class="form-control" id="valor-maximo" placeholder="Valor Máximo" min="100000"
-                step="50000" value="150000" />
+                step="10000" value="150000" />
+
+              <!-- Botão Redondo de Incremento para Valor Máximo -->
+              <button class="btn btn-outline-secondary rounded-circle" type="button" id="increment-max-btn">+</button>
             </div>
           </div>
         </div>
@@ -951,10 +979,10 @@
         <!-- Campo para Quartos (Select Dropdown) -->
         <div class="col-lg-3 col-md-6 col-12 mb-2">
           <div class="form-group">
-            <div class="input-group">
+            <div class="input-group position-relative">
               <span class="input-group-text">Quartos</span>
-              <select class="form-control" id="quartos">
-                <option value="" disabled selected>Quantidade de Quartos</option>
+              <select class="form-control custom-select-arrow" id="quartos">
+                <option value="" disabled selected>Quantos Quartos</option>
                 <option value="1">1 Quarto</option>
                 <option value="2">2 Quartos</option>
                 <option value="3">3 Quartos</option>
@@ -964,6 +992,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <!-- Botões de Ação -->
@@ -989,6 +1018,8 @@
     crossorigin="anonymous"></script>
 
   <script src="js/script.js"></script>
+
+
 
 
 </body>
