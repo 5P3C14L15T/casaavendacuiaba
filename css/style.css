@@ -203,45 +203,19 @@ header{
 }
 
 
-/* item por linha */
-.col-custom {
-    flex: 0 0 20%; /* 20% de largura para cada card */
-    max-width: 20%; /* Limita o tamanho máximo para 20% */
-  }
-  
-  @media (max-width: 1200px) {
-    .col-custom {
-      flex: 0 0 33.33%; /* Para telas menores (3 por linha) */
-      max-width: 33.33%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .col-custom {
-      flex: 0 0 50%; /* Para telas de tamanho médio (2 por linha) */
-      max-width: 50%;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .col-custom {
-      flex: 0 0 100%; /* Para telas pequenas (1 por linha) */
-      max-width: 100%;
-    }
-  }
   
 /* item por linha */
 
 
 .property-icons i {
-    font-size: 0.7em;
-    margin-right: 3px;
+    font-size: 1em;
+    margin-right: 2px !important;
     /* background-color: red; */
     color: #6e0ad6;
 }
 .property-icons span {
-    font-size: 0.8em;
-    margin-right: 10px;
+    font-size: 0.875em;
+    margin-right: 8px;
     
 }
 
