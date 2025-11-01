@@ -1,0 +1,26 @@
+{
+  "name": "casaavendacuiaba",
+  "version": "1.0.0",
+  "description": "Sistema de Venda de Casa",
+  "homepage": "https://github.com/5P3C14L15T/casaavendacuiaba#readme",
+  "bugs": {
+    "url": "https://github.com/5P3C14L15T/casaavendacuiaba/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5P3C14L15T/casaavendacuiaba.git"
+  },
+  "license": "MIT",
+  "author": "Agência JVV",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "bootstrap": "^5.3.8",
+    "sass": "^1.93.3"
+  }
+}
