@@ -65,9 +65,88 @@
 
     <main>
       <div class="container-fluid p-xl-5">
-        
-        aqui vai o form de filtro
-       
+        <!-- Filtro de Busca -->
+        <section class="filtro-section py-4">
+          <div class="container filtro-container p-4 rounded-4 shadow-sm">
+            <form class="row align-items-center justify-content-center g-3">
+              <!-- Campo: Bairro (Autocomplete) -->
+              <div class="col-lg-4 col-md-6 col-12">
+                <label for="bairro" class="form-label fw-semibold"
+                  >Bairro</label
+                >
+                <input
+                  type="text"
+                  id="bairro"
+                  class="form-control"
+                  placeholder="Digite o bairro"
+                  list="bairros"
+                />
+                <datalist id="bairros">
+                  <option value="Morada do Ouro"></option>
+                  <option value="Santa Rosa"></option>
+                  <option value="Jardim Itália"></option>
+                  <option value="Coxipó"></option>
+                  <option value="Boa Esperança"></option>
+                  <option value="Jardim das Américas"></option>
+                  <option value="CPA I"></option>
+                  <option value="CPA II"></option>
+                  <option value="CPA III"></option>
+                  <option value="Bosque da Saúde"></option>
+                </datalist>
+              </div>
+
+              <!-- Campo: Quartos -->
+              <div class="col-lg-3 col-md-6 col-12">
+                <label for="quartos" class="form-label fw-semibold"
+                  >Quartos</label
+                >
+                <select id="quartos" class="form-select">
+                  <option value="" selected disabled>Selecione</option>
+                  <option value="1">1 Quarto</option>
+                  <option value="2">2 Quartos</option>
+                  <option value="3">3 Quartos</option>
+                  <option value="4">4 Quartos</option>
+                  <option value="5+">5 ou mais</option>
+                </select>
+              </div>
+
+              <!-- Campo: Valor (Slider Range) -->
+              <div class="col-lg-3 col-md-6 col-12">
+                <label for="valor" class="form-label fw-semibold"
+                  >Valor Máximo (R$)</label
+                >
+                <input
+                  type="range"
+                  class="form-range"
+                  id="valor"
+                  min="100000"
+                  max="10000000"
+                  step="50000"
+                  value="500000"
+                  oninput="valorOutput.value = this.value"
+                />
+                <div class="d-flex justify-content-between small">
+                  <span>R$100mil</span>
+                  <span>R$10mi</span>
+                </div>
+                <output id="valorOutput" class="fw-bold d-block text-center"
+                  >500000</output
+                >
+              </div>
+
+              <!-- Botão Buscar -->
+              <div class="col-lg-2 col-md-6 col-12 text-center">
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100 mt-3 mt-lg-4"
+                >
+                  <i class="fas fa-search me-2"></i>Buscar
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
         <h2 class="titulo01">
           <strong>456</strong> Anúncios de Casas a Venda em Cuiabá
         </h2>
@@ -140,8 +219,9 @@
 
                 <!-- Badge do Bairro no canto superior direito -->
                 <span class="badge badge-top-right">
-                 <i class="far fa-location-arrow"></i>
-                  Morada do Ouro</span>
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
                 <!-- Badge do Valor no canto inferior direito -->
                 <span class="badge badge-bottom-right">R$ 2.500.000</span>
               </div>
@@ -178,7 +258,7 @@
                   </a>
                 </div>
                 <!-- Botão estilizado com Bootstrap -->
-                <a href="#" class=" btn btn-warning text-light">Ver mais</a>
+                <a href="#" class="btn btn-warning text-light">Ver mais</a>
               </div>
             </div>
           </div>
