@@ -16,6 +16,8 @@ header{
    
 }
 
+
+
 .anunciat-btn {
     background-color:#8ce563;
     color: white;
@@ -308,7 +310,28 @@ header{
   padding-right: 30px; /* Espaço para a seta */
 }
 
-  
+/* 📱 Faz o botão "Anunciar" ocupar 100% apenas na última li (mobile) */
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-item:last-child {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item:last-child .anunciat-btn {
+    display: block !important;
+    width: 100% !important;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 0;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* centraliza tudo verticalmente em desktops */
+}
+
 
   /* paginação */
 

@@ -65,8 +65,10 @@
 
     <main>
       <div class="container-fluid p-xl-5">
+        
         <!-- Filtro de Busca -->
-        <section class="filtro-section py-4">
+        <section class="filtro-section">
+          <h3 class="text-center my-2 text-secondary"><i class="far fa-filter"></i>Filto para Buscar Casas:</h3>
           <div class="container filtro-container p-4 rounded-4 shadow-sm">
             <form class="row align-items-center justify-content-center g-3">
               <!-- Campo: Bairro (Autocomplete) -->
@@ -129,9 +131,14 @@
                   <span>R$100mil</span>
                   <span>R$10mi</span>
                 </div>
-                <output id="valorOutput" class="fw-bold d-block text-center"
-                  >500000</output
-                >
+                <div class="text-center">
+                  <output id="valorOutput" class="fw-bold d-block fs-5"
+                    >R$ 100.000,00</output
+                  >
+                  <small id="valorExtenso" class="text-muted"
+                    >Mil Reais</small
+                  >
+                </div>
               </div>
 
               <!-- Botão Buscar -->
@@ -147,9 +154,9 @@
           </div>
         </section>
 
-        <h2 class="titulo01">
+        <h1 class="text-center text-secondary display-6 my-3">
           <strong>456</strong> Anúncios de Casas a Venda em Cuiabá
-        </h2>
+        </h1>
         <div class="row">
           <!-- Card 1 -->
           <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
@@ -422,5 +429,35 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+ <script>
+// Seleciona os elementos
+const range = document.getElementById("valor");
+const output = document.getElementById("valorOutput");
+const extenso = document.getElementById("valorExtenso");
+
+// Função para formatar número em Real
+function formatarReal(valor) {
+  return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+}
+
+// Atualiza o valor formatado e ajusta a unidade
+range.addEventListener("input", () => {
+  const valor = parseInt(range.value);
+  output.textContent = formatarReal(valor);
+
+  if (valor < 1000000) {
+    extenso.textContent = "Mil Reais";
+  } else if (valor >= 1000000 && valor < 2000000) {
+    extenso.textContent = "Milhão de Reais";
+  } else {
+    extenso.textContent = "Milhões de Reais";
+  }
+});
+</script>
+
+
+
+
   </body>
 </html>
