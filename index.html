@@ -65,10 +65,11 @@
 
     <main>
       <div class="container-fluid p-xl-5">
-        
         <!-- Filtro de Busca -->
         <section class="filtro-section">
-          <h3 class="text-center my-2 text-secondary"><i class="far fa-filter"></i>Filto para Buscar Casas:</h3>
+          <h3 class="text-center my-2 text-secondary">
+            <i class="far fa-filter"></i>Filtro para Buscar Casas:
+          </h3>
           <div class="container filtro-container p-4 rounded-4 shadow-sm">
             <form class="row align-items-center justify-content-center g-3">
               <!-- Campo: Bairro (Autocomplete) -->
@@ -135,9 +136,7 @@
                   <output id="valorOutput" class="fw-bold d-block fs-5"
                     >R$ 100.000,00</output
                   >
-                  <small id="valorExtenso" class="text-muted"
-                    >Mil Reais</small
-                  >
+                  <small id="valorExtenso" class="text-muted">Mil Reais</small>
                 </div>
               </div>
 
@@ -154,7 +153,7 @@
           </div>
         </section>
 
-        <h1 class="text-center text-secondary display-6 my-3">
+        <h1 class="text-center text-secondary display-6 my-5">
           <strong>456</strong> Anúncios de Casas a Venda em Cuiabá
         </h1>
         <div class="row">
@@ -177,21 +176,21 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img
-                        src="images/casa.jpeg"
+                        src="https://picsum.photos/400/300?random=7"
                         class="d-block w-100"
                         alt="Casa 1"
                       />
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="images/casa.jpeg"
+                        src="https://picsum.photos/400/300?random=8"
                         class="d-block w-100"
                         alt="Casa 2"
                       />
                     </div>
                     <div class="carousel-item">
                       <img
-                        src="images/casa.jpeg"
+                        src="https://picsum.photos/400/300?random=9"
                         class="d-block w-100"
                         alt="Casa 3"
                       />
@@ -230,234 +229,1490 @@
                   Morada do Ouro</span
                 >
                 <!-- Badge do Valor no canto inferior direito -->
-                <span class="badge badge-bottom-right">R$ 2.500.000</span>
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
               </div>
 
               <!-- Título, Valor e Bairro -->
               <div class="card-body">
-                <h5 class="card-title">
+                <h5 class="property-title my-2">
                   Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
                 </h5>
                 <!-- Ícones para detalhes da propriedade -->
-                <div class="property-icons">
-                  <i class="fas fa-bed me-2"></i><span>3</span>
-                  <i class="fas fa-bath me-2"></i><span>3</span>
-                  <i class="fas fa-car me-2"></i><span>3</span>
-                  <i class="fas fa-arrows-alt me-2"></i><span>150m²</span>
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
                 </div>
+
                 <p class="publication-date">Postado em: 15/09/24, 14:30</p>
               </div>
 
               <!-- Footer com ícones -->
               <div
-                class="card-footer d-flex justify-content-between align-items-center"
+                class="property-footer d-flex justify-content-between align-items-center p-3"
               >
                 <!-- Ícones com tamanhos iguais -->
                 <div class="d-flex align-items-center">
-                  <a href="#" class="like text-danger me-1">
-                    <i class="fas fa-heart"></i>
-                  </a>
-                  <a href="#" class="zap text-success me-1">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
-                  <a href="#" class="save text-warning">
-                    <i class="fas fa-bookmark"></i>
-                  </a>
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
                 </div>
                 <!-- Botão estilizado com Bootstrap -->
-                <a href="#" class="btn btn-warning text-light">Ver mais</a>
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
               </div>
             </div>
           </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=10"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=11"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=12"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=13"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=14"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=15"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=16"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=17"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=18"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=19"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=20"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=21"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=22"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=23"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=24"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=25"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=26"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=27"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=28"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=29"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=30"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=31"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=32"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=33"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=34"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=35"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=36"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=37"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=38"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=39"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <!-- Card 1 -->
+          <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sl-12 mb-4">
+            <div class="card rounded-4 shadow-md">
+              <!-- Carousel com Badges -->
+              <div class="card-img position-relative">
+                <!-- Ícone de medalha no canto superior esquerdo -->
+                <span class="badge badge-top-left">
+                  <i class="fas fa-crown"></i>
+                </span>
+
+                <!-- Carousel de Imagens -->
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/400/300?random=4"
+                        class="d-block w-100"
+                        alt="Casa 1"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=5"
+                        class="d-block w-100"
+                        alt="Casa 2"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/400/300?random=6"
+                        class="d-block w-100"
+                        alt="Casa 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Botões discretos para navegar -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Próximo</span>
+                  </button>
+                </div>
+
+                <!-- Badge do Bairro no canto superior direito -->
+                <span class="badge badge-top-right">
+                  <i class="far fa-location-arrow"></i>
+                  Morada do Ouro</span
+                >
+                <!-- Badge do Valor no canto inferior direito -->
+                <span class="badge badge-bottom-right">
+                  <i class="fa-solid fa-tag"></i>
+                  R$ 2.500.000</span
+                >
+              </div>
+
+              <!-- Título, Valor e Bairro -->
+              <div class="card-body">
+                <h5 class="property-title my-2">
+                  Casa Térrea no Condomínio Primor das Torres Abaixo do Valor
+                </h5>
+                <!-- Ícones para detalhes da propriedade -->
+                <div
+                  class="property-features d-flex justify-content-between flex-wrap mt-2"
+                >
+                  <div><i class="fas fa-bed text-secondary"></i> 3 Quartos</div>
+                  <div>
+                    <i class="fas fa-bath text-secondary"></i> 3 Banheiros
+                  </div>
+                  <div><i class="fas fa-car text-secondary"></i> 3 Vagas</div>
+                  <div>
+                    <i class="fas fa-ruler-combined text-secondary"></i> 150m²
+                  </div>
+                </div>
+
+                <p class="publication-date">Postado em: 15/09/24, 14:30</p>
+              </div>
+
+              <!-- Footer com ícones -->
+              <div
+                class="property-footer d-flex justify-content-between align-items-center p-3"
+              >
+                <!-- Ícones com tamanhos iguais -->
+                <div class="d-flex align-items-center">
+                  <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon"
+                      ><i class="fas fa-share-alt"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- Botão estilizado com Bootstrap -->
+                <a href="#" class="btn btn-warning text-light">Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+          <!-- Paginação -->
+          <!-- Paginação -->
+<nav aria-label="Navegação de páginas">
+  <ul class="pagination justify-content-center my-5 flex-wrap">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Primeira">
+        <span aria-hidden="true">&laquo; Primeira</span>
+      </a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Anterior">
+        <span aria-hidden="true">&lsaquo;</span>
+      </a>
+    </li>
+
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+
+    <li class="page-item active" aria-current="page">
+      <span class="page-link">7</span>
+    </li>
+
+    <li class="page-item"><a class="page-link" href="#">8</a></li>
+    <li class="page-item"><a class="page-link" href="#">9</a></li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Próxima">
+        <span aria-hidden="true">&rsaquo;</span>
+      </a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Última">
+        <span aria-hidden="true">Última &raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+          <!-- paginação -->
         </div>
       </div>
     </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    <!-- RODAPÉ -->
+    <footer class="footer-dark text-light mt-5">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <!-- Redes Sociais -->
+      <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+        <h6 class="fw-semibold mb-3 text-uppercase text-white">Siga-nos</h6>
+        <a href="https://www.facebook.com/casaavendacuiaba" target="_blank" class="social-link me-3">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/casaavendacuiaba" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
 
-    <!-- Rodapé fixo estilo menu mobile -->
-    <div class="footer-menu">
-      <a href="#" class="home-icon">
-        <i class="fas fa-home"></i>
-      </a>
-      <a href="#" class="search-icon">
-        <i class="fas fa-search"></i>
-      </a>
-      <a href="#" class="profile-icon">
-        <i class="fas fa-bookmark"></i>
-      </a>
-      <a href="#" class="profile-icon">
-        <i class="fas fa-user"></i>
-      </a>
-    </div>
+      <!-- Logo Central -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="images/casaavendacuiaba.png" alt="Casa à Venda Cuiabá" class="footer-logo img-fluid mb-2" />
+        <p class="small text-light mb-0">
+          Casas à venda em toda Cuiabá — anúncios gratuitos e diretos com o proprietário.
+        </p>
+      </div>
 
-    <!-- Formulário de Pesquisa -->
-
-    <!-- Formulário de Pesquisa -->
-    <div id="search-form" class="search-form">
-      <div class="container">
-        <div class="row">
-          <!-- Campo para Bairro (Select Dropdown com Busca) -->
-          <div class="col-lg-3 col-md-6 col-12 mb-2">
-            <div class="form-group">
-              <div class="input-group position-relative">
-                <span class="input-group-text">Bairro</span>
-                <select class="form-control custom-select-arrow" id="bairro">
-                  <option value="" disabled selected>Escolha o Bairro</option>
-                  <option value="bairro1">Bairro 1</option>
-                  <option value="bairro2">Bairro 2</option>
-                  <option value="bairro3">Bairro 3</option>
-                  <option value="bairro4">Bairro 4</option>
-                  <option value="bairro5">Bairro 5</option>
-                  <option value="bairro6">Bairro 6</option>
-                  <option value="bairro7">Bairro 7</option>
-                  <option value="bairro8">Bairro 8</option>
-                  <option value="bairro9">Bairro 9</option>
-                  <option value="bairro10">Bairro 10</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <!-- Campo para Valor Mínimo -->
-          <div class="col-lg-3 col-md-6 col-12 mb-2">
-            <div class="form-group">
-              <div class="input-group">
-                <!-- Botão Redondo de Decremento para Valor Mínimo -->
-                <button
-                  class="btn btn-outline-secondary rounded-circle"
-                  type="button"
-                  id="decrement-min-btn"
-                >
-                  -
-                </button>
-
-                <span class="input-group-text">Valor Mín R$</span>
-
-                <!-- Campo de Input para o Valor Mínimo -->
-                <input
-                  type="number"
-                  class="form-control"
-                  id="valor-minimo"
-                  placeholder="Valor Mínimo"
-                  min="100000"
-                  step="10000"
-                  value="100000"
-                />
-
-                <!-- Botão Redondo de Incremento para Valor Mínimo -->
-                <button
-                  class="btn btn-outline-secondary rounded-circle"
-                  type="button"
-                  id="increment-min-btn"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Campo para Valor Máximo -->
-          <div class="col-lg-3 col-md-6 col-12 mb-2">
-            <div class="form-group">
-              <div class="input-group">
-                <!-- Botão Redondo de Decremento para Valor Máximo -->
-                <button
-                  class="btn btn-outline-secondary rounded-circle"
-                  type="button"
-                  id="decrement-max-btn"
-                >
-                  -
-                </button>
-
-                <span class="input-group-text">Valor Max R$</span>
-
-                <!-- Campo de Input para o Valor Máximo -->
-                <input
-                  type="number"
-                  class="form-control"
-                  id="valor-maximo"
-                  placeholder="Valor Máximo"
-                  min="100000"
-                  step="10000"
-                  value="150000"
-                />
-
-                <!-- Botão Redondo de Incremento para Valor Máximo -->
-                <button
-                  class="btn btn-outline-secondary rounded-circle"
-                  type="button"
-                  id="increment-max-btn"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Campo para Quartos (Select Dropdown) -->
-          <div class="col-lg-3 col-md-6 col-12 mb-2">
-            <div class="form-group">
-              <div class="input-group position-relative">
-                <span class="input-group-text">Quartos</span>
-                <select class="form-control custom-select-arrow" id="quartos">
-                  <option value="" disabled selected>Quantos Quartos</option>
-                  <option value="1">1 Quarto</option>
-                  <option value="2">2 Quartos</option>
-                  <option value="3">3 Quartos</option>
-                  <option value="4">4 Quartos</option>
-                  <option value="5oumais">5 ou Mais</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Botões de Ação -->
-        <div class="row">
-          <div class="col-12 d-flex justify-content-between">
-            <button class="btn btn-primary flex-grow-1 me-1">Pesquisar</button>
-            <button class="btn btn-secondary flex-grow-1">Limpar Dados</button>
-          </div>
-        </div>
+      <!-- Agência Criadora -->
+      <div class="col-md-4 text-center text-md-end">
+        <p class="small text-secondary mb-1">Desenvolvido por</p>
+        <a href="https://www.joaovictorvieira.com.br" target="_blank" class="fw-semibold text-decoration-none link-agency">
+          Agência João Victor Vieira
+        </a>
       </div>
     </div>
+
+    <hr class="my-4 border-secondary opacity-25" />
+
+    <!-- Informações Legais -->
+    <div class="row">
+      <div class="col text-center small">
+        <a href="#" class="footer-link me-3">Termos de Uso</a>
+        <a href="#" class="footer-link me-3">Política de Privacidade</a>
+        <a href="#contato" class="footer-link">Fale Conosco</a>
+        <p class="mt-3 mb-0 text-light">
+          © 2025 <strong>Casa à Venda Cuiabá</strong> — Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
 
     <!-- Formulário de Pesquisa -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 
- <script>
-// Seleciona os elementos
-const range = document.getElementById("valor");
-const output = document.getElementById("valorOutput");
-const extenso = document.getElementById("valorExtenso");
+    <script>
+      // Seleciona os elementos
+      const range = document.getElementById("valor");
+      const output = document.getElementById("valorOutput");
+      const extenso = document.getElementById("valorExtenso");
 
-// Função para formatar número em Real
-function formatarReal(valor) {
-  return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-}
+      // Função para formatar número em Real
+      function formatarReal(valor) {
+        return valor.toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        });
+      }
 
-// Atualiza o valor formatado e ajusta a unidade
-range.addEventListener("input", () => {
-  const valor = parseInt(range.value);
-  output.textContent = formatarReal(valor);
+      // Atualiza o valor formatado e ajusta a unidade
+      range.addEventListener("input", () => {
+        const valor = parseInt(range.value);
+        output.textContent = formatarReal(valor);
 
-  if (valor < 1000000) {
-    extenso.textContent = "Mil Reais";
-  } else if (valor >= 1000000 && valor < 2000000) {
-    extenso.textContent = "Milhão de Reais";
-  } else {
-    extenso.textContent = "Milhões de Reais";
-  }
-});
-</script>
-
-
-
-
+        if (valor < 1000000) {
+          extenso.textContent = "Mil Reais";
+        } else if (valor >= 1000000 && valor < 2000000) {
+          extenso.textContent = "Milhão de Reais";
+        } else {
+          extenso.textContent = "Milhões de Reais";
+        }
+      });
+    </script>
   </body>
 </html>

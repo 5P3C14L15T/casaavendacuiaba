@@ -9,4 +9,87 @@ $success: #030A8C;
 $btn-padding-x: 1rem;
 $btn-padding-y: 0.1rem;
 
+// single
+// Variáveis de cor (exemplo)
+$brand-primary: #8be36b;
+$brand-accent: #f28000;
+$font-heading: 'Montserrat', sans-serif;
+
+.property-title {
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.property-price {
+  font-size: 2rem;
+  color: $brand-accent;
+  margin-bottom: 1rem;
+}
+
+.property-location {
+  color: #666;
+  font-size: 0.9rem;
+  i {
+    margin-right: 6px;
+    color: $brand-primary;
+  }
+}
+
+.property-features {
+  li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #555;
+    i {
+      color: $brand-accent;
+      margin-right: 8px;
+    }
+  }
+}
+
+.contact-form {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  .btn {
+    background: $brand-primary;
+    border: none;
+    &:hover {
+      background: darken($brand-primary, 8%);
+    }
+  }
+}
+
+// Galeria
+#propertyGallery {
+  .carousel-inner img {
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+// Responsividade
+@media (max-width: 992px) {
+  .property-title {
+    font-size: 1.5rem;
+  }
+  .property-price {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .property-features li {
+    font-size: 0.85rem;
+  }
+  .contact-form {
+    padding: 1.5rem 1rem;
+  }
+}
+
+
+
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

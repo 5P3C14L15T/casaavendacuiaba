@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Casa à Venda Cuiabá - Detalhes do Imóvel</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css"> <!-- compilado SCSS -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+</head>
+<body>
+  <header>
+    <!-- sua navbar -->
+  </header>
+  <main class="container mt-5 mb-5">
+    <div class="row">
+      <!-- Galeria / Carrossel -->
+      <div class="col-lg-8 mb-4">
+        <div id="propertyGallery" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://picsum.photos/400/300?random=1" class="d-block w-100" alt="Imagem principal do imóvel">
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/400/300?random=2" class="d-block w-100" alt="Imagem do imóvel">
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/400/300?random=3" class="d-block w-100" alt="Imagem do imóvel">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#propertyGallery" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#propertyGallery" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Detalhes + Formulário de Contato -->
+      <div class="col-lg-4">
+        <div class="property-info mb-4">
+          <h1 class="property-title">Casa Térrea no Condomínio Primor das Torres</h1>
+          <h2 class="property-price text-primary">R$ 2.500.000</h2>
+          <p class="property-location"><i class="fas fa-map-marker-alt"></i> Morada do Ouro, Cuiabá – MT</p>
+
+          <ul class="property-features list-unstyled">
+            <li><i class="fas fa-bed"></i> 3 Quartos</li>
+            <li><i class="fas fa-bath"></i> 3 Banheiros</li>
+            <li><i class="fas fa-car"></i> 3 Vagas</li>
+            <li><i class="fas fa-ruler-combined"></i> 150 m²</li>
+          </ul>
+        </div>
+
+        <div class="contact-form p-4 bg-light rounded-4 shadow-sm">
+          <h3 class="mb-3">Entre em contato</h3>
+          <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+            <input type="hidden" name="phone" value="+55 (XX) 9 XXXX-XXXX"> <!-- número do vendedor -->
+            <input type="hidden" name="text" value="Olá, vi o anúncio [ID ou link do imóvel] no Casa à Venda Cuiabá e gostaria de mais informações.">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone/WhatsApp</label>
+              <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(XX) 9 XXXX-XXXX" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="3" placeholder="Tenho interesse nesse imóvel..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100"><i class="fab fa-whatsapp me-2"></i>Enviar pelo WhatsApp</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Descrição detalhada, mapa, vídeos, etc. -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <h4>Descrição do Imóvel</h4>
+        <p>… texto completo da descrição …</p>
+
+        <h4 class="mt-4">Localização</h4>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe src="https://www.google.com/maps/embed?pb=…"></iframe>
+        </div>
+
+        <h4 class="mt-4">Vídeo ou Tour Virtual</h4>
+        <video class="w-100 rounded-4" controls src="videos/tour-imovel.mp4"></video>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <!-- seu rodapé -->
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

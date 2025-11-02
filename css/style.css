@@ -6,7 +6,7 @@ body{
     padding: 0;
     font-family: 'Br Firma';
     font-weight: 300;
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
       
 }
 
@@ -325,16 +325,471 @@ header{
     border-radius: 8px;
     padding: 0.6rem 1rem;
   }
+  .navbar-nav {
+  display: flex;
+  align-items:start !important; /* centraliza tudo verticalmente em desktops */
+}
+
 }
 
 .navbar-nav {
   display: flex;
-  align-items: center; /* centraliza tudo verticalmente em desktops */
+  align-items:center; /* centraliza tudo verticalmente em desktops */
 }
+
+
+/* card moderno */
+.property-card {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Imagem e Badges */
+.property-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.property-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover .property-image img {
+  transform: scale(1.05);
+}
+
+.badge-category {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #7a3bda;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.price-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Botão de favorito */
+.fav-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: #fff;
+  color: #d93ce7;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.fav-btn:hover {
+  background: #d93ce7;
+  color: #fff;
+}
+
+/* Corpo */
+.property-body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.property-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.6rem;
+}
+
+.property-features div {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.property-features i {
+  color: #7a3bda;
+  margin-right: 5px;
+}
+
+/* Rodapé */
+.property-footer {
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.property-footer .btn-see {
+  background: #68c257;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 8px 18px;
+  transition: background 0.3s ease;
+}
+
+.property-footer .btn-see:hover {
+  background: #5ab14e;
+}
+
+.social-icons .icon {
+  color: #777;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  color: #25d366;
+}
+
+.social-icons .icon {
+  color: #777;
+  margin-right: 12px;
+  font-size: 1.5rem; /* antes 1.2rem */
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .social-icons .icon {
+    font-size: 1.8rem; /* aumenta em telas touch */
+  }
+}
+
+.social-icons .icon:hover {
+  background: rgba(37, 211, 102, 0.1);
+  border-radius: 50%;
+  color: #25d366;
+}
+
+
+
+/* card moderno */
+
+.badge-premium {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #ffd700, #f28000);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+
+/* card moderno */
+
+/* CARD MODERNO */
+.property-card {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGEM + BADGES */
+.property-image {
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.property-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover .property-image img {
+  transform: scale(1.04);
+}
+
+/* SELO PREMIUM - agora ajustado para não sobrepor o bairro */
+.badge-premium {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #ffd700, #f28000);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+/* BADGE DO BAIRRO - reposicionada mais abaixo */
+.badge-category {
+  position: absolute;
+  top: 42px; /* empurrado para baixo */
+  left: 12px;
+  background: #7a3bda;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  z-index: 9;
+}
+
+/* VALOR */
+.price-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* FAVORITAR */
+.fav-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: #fff;
+  color: #d93ce7;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+  z-index: 10;
+}
+.fav-btn:hover {
+  background: #d93ce7;
+  color: #fff;
+}
+
+/* CORPO */
+.property-body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.property-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.property-features div {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.property-features i {
+  color: #7a3bda;
+  margin-right: 5px;
+}
+
+/* RODAPÉ */
+.property-footer {
+  border-top: 1px solid #eee;
+  background: #fafafa;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.property-footer .btn-see {
+  background: #68c257;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 8px 18px;
+  transition: background 0.3s ease;
+}
+.property-footer .btn-see:hover {
+  background: #5ab14e;
+}
+
+/* ÍCONES SOCIAIS */
+.social-icons .icon {
+  color: #777;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons .icon:hover {
+  color: #25d366;
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .social-icons .icon {
+    font-size: 1.7rem;
+  }
+}
+
 
 
   /* paginação */
 
   
+  /* paginação moderna */
+.pagination .page-link {
+  color: #333;
+  border: none;
+  margin: 0 4px;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 8px 14px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.pagination .page-item.active .page-link {
+  background: linear-gradient(135deg, #f28000, #a15eff);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pagination .page-link:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #aaa;
+  pointer-events: none;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+/* Tablets e celulares */
+@media (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .pagination .page-link {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    margin: 0 2px;
+  }
+
+  /* Oculta parte das páginas para não estourar a tela */
+  .pagination li:nth-child(n+6):nth-last-child(n+4) {
+    display: none; /* esconde páginas extras */
+  }
+}
+
+/* Smartphones muito pequenos */
+@media (max-width: 480px) {
+  .pagination .page-link {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .pagination li:nth-child(n+5):nth-last-child(n+3) {
+    display: none; /* mantém só 2 para cada lado */
+  }
+}
+
+/* paginação */
   
-  
+
+/* rodapé */
+ .footer-dark {
+  background: #111;
+  color: #dcdcdc;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.footer-logo {
+  width: 160px;
+  filter: brightness(1);
+}
+
+.social-link {
+  display: inline-block;
+  color: #dcdcdc;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: #8be36b;
+  transform: scale(1.15);
+}
+
+.link-agency {
+  color: #f28000;
+  transition: all 0.3s ease;
+}
+
+.link-agency:hover {
+  color: #a15eff;
+  text-decoration: underline;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+body {
+  margin-bottom: 0; /* evita espaçamento inferior */
+}
